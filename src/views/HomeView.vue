@@ -167,7 +167,8 @@
         <div class="skills mt-12">
           <div class="languague grid sm:grid-cols- md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div class="card flex gap-4 w-[382px] h-[150px] p-8 bg-white rounded-lg border dark:bg-gray-800">
+            <div
+              class="card flex gap-4 w-[322px] h-[150px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
               <font-awesome-icon :icon="['fas', 'globe']" class="bg-gray-100 p-2 rounded-full text-blue-700 text-3xl" />
               <div>
                 <h2 class="font-bold">Desenvolvimento Web</h2>
@@ -176,7 +177,8 @@
               </div>
             </div>
 
-            <div class="card flex gap-4 w-[382px] h-[150px] p-8 bg-white rounded-lg border dark:bg-gray-800">
+            <div
+              class="card flex gap-4 w-[322px] h-[150px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
               <font-awesome-icon :icon="['fas', 'desktop']"
                 class="bg-gray-100 p-2 rounded-full text-blue-700 text-3xl" />
               <div>
@@ -186,7 +188,8 @@
               </div>
             </div>
 
-            <div class="card flex gap-4 w-[382px] h-[150px] p-8 bg-white rounded-lg border dark:bg-gray-800">
+            <div
+              class="card flex gap-4 w-[322px] h-[150px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
               <font-awesome-icon :icon="['fas', 'user']" class="bg-gray-100 p-2 rounded-full text-blue-700 text-3xl" />
               <div>
                 <h2 class="font-bold">UI/UX Design</h2>
@@ -218,7 +221,8 @@
 
 
 
-            <div class="portfolio-card  flex gap-4 w-[382px] h-[250px] p-3 bg-white rounded-lg border dark:bg-gray-800">
+            <div
+              class="portfolio-card  flex gap-4 w-[322px] h-[250px] md:w-[382px] lg:h-[250px] lg:w-[382px] lg:h-[250px] p-3 bg-white rounded-lg border dark:bg-gray-800">
 
 
               <div class="flex  flex-col justify-between p-2 leading-normal">
@@ -229,7 +233,7 @@
 
 
             <div
-              class="qfome-card group/item hover:bg-slate-600 hover:text-white transition-colors duration-300 card flex gap-4 w-[382px] h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="qfome-card group/item hover:bg-slate-600 hover:text-white transition-colors duration-300 card flex gap-4 w-[322px] h-[250px] md:w-[382px] lg:h-[250px] lg:w-[382px] lg:h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
               <div></div>
               <div>
                 <a class="group/edit invisible group-hover/item:visible transition-opacity duration-300 ease-in-out"
@@ -244,7 +248,8 @@
             </div>
 
 
-            <div class="mysong-card flex gap-4 w-[382px] h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
+            <div
+              class="mysong-card flex gap-4 w-[322px] h-[250px] md:w-[382px] lg:h-[250px]  lg:w-[382px] lg:h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
 
             </div>
 
@@ -254,18 +259,18 @@
     </section>
 
     <section class="w-full   p-6" id="contacto">
-      <h1 class="flex justify-center items-left text-left text-2xl text-blue-700 font-bold">
+      <h1 class="flex justify-center items-left text-left text-md md:text-2xl text-blue-700 font-bold">
         Contacto
       </h1>
       <p class="text-sm text-gray-500 text-center">Entre em contacto</p>
 
 
 
-      <div class="skills mt-12 grid grid-cols-2  ">
+      <div class="skills mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 ">
         <div class="languague">
-          <h1 class="text-2xl font-bold text-blue-700">Entre em contacto hoje</h1>
+          <h1 class="text-sm md:text-2xl font-bold text-blue-700">Entre em contacto hoje</h1>
           <p class="text-sm text-gray-500">Sinta-se a vontade para entrar em contacto comigo!</p>
-          <div class="social-media grid gap-2  mt-12">
+          <div class="social-media grid gap-2 hidden md:block  mt-12">
             <div class="flex gap-1">
 
               <span class="material-symbols-outlined ">
