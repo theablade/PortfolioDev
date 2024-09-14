@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class="img ">
-        <img class="object-fill hidden lg:grid md:w-[92rem]" src="../assets/Vector 1.png" alt="hero" loading="lazy" />
+        <img class="object-fill hidden lg:grid md:w-[92rem]" src="../assets/Vector-1.webp" alt="hero" loading="lazy" />
       </div>
 
 
@@ -72,7 +72,7 @@
 
       <div class="about flex mb-[4rem]  items-center justify-between ">
         <div class="img ">
-          <img class="object-fill hidden lg:grid w-[32rem]" src="../assets/hack.png" alt="hero" />
+          <img class="object-fill hidden lg:grid w-[32rem]" src="../assets/hack.webp" alt="hero" />
         </div>
 
         <div class="lg:w-3/4 mt-9 lg:mt-7">
