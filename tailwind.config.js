@@ -9,6 +9,9 @@ export default {
     extend: {
       colors: {
         'custom-pink': '#FF7789'
+      },
+      fontFamily: {
+        'dm-sans': ['"DMSans"', 'sans-serif'] // Define a fonte normal
       }
     }
   },
