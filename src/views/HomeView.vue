@@ -19,7 +19,8 @@
 
         </p>
         <div class="contant">
-          <p class="w-6/8 lg:w-3/4 text-base/2 text-justify mt-6 text-gray-500 tracking-widest font-dm-sans">Sou desenvolvedor
+          <p class="w-6/8 lg:w-3/4 text-base/2 text-justify mt-6 text-gray-500 tracking-widest font-dm-sans">Sou
+            desenvolvedor
             frontEnd com habilidades em
             Reactjs,
             Vuejs, Node.js e
@@ -422,5 +423,10 @@ const sendEmail = () => {
 
 html {
   scroll-behavior: smooth;
+}
+
+.contant p {
+  font-family: 'DMSans', Arial, sans-serif;
+
 }
 </style>
