@@ -28,23 +28,30 @@
             de experiência, eu crio soluções web e mobile personalizadas. para ajudar os meus clientes a alcançar seus
             objetivos.</p>
 
-          <div class="social-media flex gap-8 text-2xl mt-12">
-            <a href="https://www.linkedin.com/in/fernandomuethea/" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
+          <div class="social-media flex gap-8  mt-12">
+            <a href="https://www.linkedin.com/in/fernandomuethea/" target="_blank"
+              class="flex flex-col gap-1 dark:text-gray-70 text-center">
+              <i class="fa-brands fa-linkedin text-2xl"></i>
+              linkdin
             </a>
-            <a href="https://github.com/Muethea" target="_blank">
-              <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/Muethea" target="_blank"
+              class="flex flex-col gap-1 dark:text-gray-70 text-center">
+              <i class="fa-brands text-2xl fa-github"></i>
+              github
             </a>
-            <a href="https://www.behance.net/fernandomuethea">
-              <i class="fa-brands fa-behance"></i>
+            <a href="https://www.behance.net/fernandomuethea" class="flex flex-col gap-1 dark:text-gray-70 text-center">
+              <i class="fa-brands text-2xl fa-behance"></i>
+              behance
+
             </a>
-            <a href="https://dribbble.com/turasdesigner">
-              <i class="fa-brands fa-dribbble"></i>
+            <a href="https://dribbble.com/turasdesigner" class="flex flex-col gap-1 dark:text-gray-70 text-center">
+              <i class="fa-brands text-2xl fa-dribbble"></i>
+              dribbble
             </a>
           </div>
           <div class="btns mt-12 flex gap-5 lg:gap-12">
             <button
-              class="btn btn-primary text-white  w-[106px] h-[50px] lg:w-[146px] lg:h-[62px] hover:bg-white hover:text-custom-pink hover:border bg-custom-pink w-[146px] h-[62px] rounded-xl">Ler
+              class="btn btn-primary text-white font-bold  w-[106px] h-[50px] lg:w-[146px] lg:h-[62px] hover:bg-white hover:text-custom-pink hover:border bg-custom-pink w-[146px] h-[62px] rounded-xl">Ler
               mais</button>
             <button
               class="btn btn-secondary w-[106px] h-[50px] lg:w-[146px] lg:h-[62px] rounded-xl text-blue-700 hover:bg-blue-700 hover:text-white border dark:text-white">Contacto</button>
@@ -52,7 +59,7 @@
         </div>
       </div>
       <div class="img ">
-        <img class="object-fill hidden lg:grid md:w-[92rem]" src="../assets/Vector 1.png" alt="hero" />
+        <img class="object-fill hidden lg:grid md:w-[92rem]" src="../assets/Vector 1.png" alt="hero" loading="lazy" />
       </div>
 
 
@@ -384,7 +391,7 @@ const sendEmail = () => {
   const templateParams = {
     name: form.name,         // Substitui {{name}} no EmailJS
     from_name: form.name,    // Substitui {{from_name}} no EmailJS
-    email: form.email,    
+    email: form.email,
     reply_to: form.email,   // Substitui {{email}} no campo "From Email"
     message: form.message    // Substitui {{message}} no EmailJS
   }
@@ -412,25 +419,6 @@ const sendEmail = () => {
   transform: rotate(90deg);
 }
 
-.portfolio-card {
-  background-image: url('../assets/Home.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-
-
-}
-
-.qfome-card {
-  background-image: url('../assets/qfome.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.mysong-card {
-  background-image: url('../assets/mysong.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 html {
   scroll-behavior: smooth;

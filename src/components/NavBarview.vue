@@ -4,7 +4,7 @@
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
 
                 <span class="self-center flex text-xl font-semibold whitespace-nowrap dark:text-white">
-                    <img src="../assets/Logo.png" width="64" alt="">
+                    
                     FrontEnd Prodigy _</span>
             </a>
             <button @click="toggleMenu" type="button"
