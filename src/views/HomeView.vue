@@ -52,10 +52,10 @@
           </div>
           <div class="btns mt-12 flex gap-5 lg:gap-12">
             <button
-              class="btn btn-primary text-white font-bold  w-[106px] h-[50px] lg:w-[146px] lg:h-[62px] hover:bg-white hover:text-custom-pink hover:border bg-custom-pink w-[146px] h-[62px] rounded-xl">Ler
+              class="btn  text-white font-bold  w-[106px] h-[50px] lg:w-[146px] lg:h-[62px] hover:bg-white hover:text-custom-pink hover:border bg-blue-700 w-[146px] h-[62px] rounded-xl">Ler
               mais</button>
             <button
-              class="btn btn-secondary w-[106px] h-[50px] lg:w-[146px] lg:h-[62px] rounded-xl text-blue-700 hover:bg-blue-700 hover:text-white border dark:text-white">Contacto</button>
+              class="btn btn-secondary w-[106px] h-[50px] lg:w-[146px] lg:h-[62px] rounded-xl text-blue-700 hover:bg-blue-700 hover:text-white font-bold border dark:text-white">Contacto</button>
           </div>
         </div>
       </div>
