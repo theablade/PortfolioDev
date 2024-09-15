@@ -68,30 +68,25 @@
 
     </div>
 
-    <section id="sobre">
-
-
-      <div class="about flex mb-[4rem]  items-center justify-between ">
-        <div class="img ">
-          <img class="object-fill hidden lg:grid w-[32rem] aspect-[4/3]" src="../assets/hack.webp" alt="hero" />
+    <section id="sobre" class="py-16 mt-16 bg-gray-100">
+      <div class="about flex flex-col lg:flex-row items-center justify-between mb-16 lg:mb-0">
+        <!-- Imagem -->
+        <div class="img mb-8 lg:mb-0 lg:mr-8">
+          <img class="object-fill hidden lg:block w-[32rem] aspect-[4/3]" src="../assets/hack.webp" alt="hero" />
         </div>
 
-        <div class="lg:w-3/4 mt-9 lg:mt-7">
-
-          <h1 class="lg:text-3xl text-lg  text-blue-700 font-bold">Sobre mim</h1>
-          <p class=" lg:w-[620px]  text-justify lg:text-left leading-8 text-base/2 mt-6 text-gray-500">
-            Meu nome é <span class="text-blue-700 font-bold">
-              Fernando dos Santos Muethea
-            </span>desenvolvedor front-end com habilidades em React, MongoDB, Node.js
-            e
-            design de UI/UX. Com mais de 2 anos de experiência, eu crio soluções web e mobile personalizadas para
-            ajudar
-            os meus clientes a alcançar seus objetivos.
+        <!-- Conteúdo de texto -->
+        <div class="lg:w-3/4 mt-9 lg:mt-0">
+          <h1 class="text-lg lg:text-3xl font-bold text-blue-700">Sobre mim</h1>
+          <p class="mt-6 text-base lg:text-lg text-gray-500 leading-relaxed lg:w-[620px] text-justify lg:text-left">
+            Meu nome é <span class="text-blue-700 font-bold">Fernando dos Santos Muethea</span>, desenvolvedor front-end
+            com habilidades em React, MongoDB, Node.js e design de UI/UX. Com mais de 2 anos de experiência, eu crio
+            soluções web e mobile personalizadas para ajudar os meus clientes a alcançar seus objetivos.
           </p>
         </div>
       </div>
-
     </section>
+
 
     <section class="w-full text-center p-6 mb-[4rem]" id="habilidades">
       <h1 class="flex justify-center items-center text-center lg:text-2xl text-lg text-blue-700 font-bold">
@@ -353,10 +348,11 @@
               </div>
 
               <div class="flex justify-end mb-5">
-                <button class="px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                <button
+                  class="px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
                   Enviar
                 </button>
-                
+
               </div>
             </form>
           </div>
