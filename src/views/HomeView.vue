@@ -79,7 +79,7 @@
         <div class="lg:w-3/4 mt-9 lg:mt-7">
 
           <h1 class="lg:text-3xl text-lg  text-blue-700 font-bold">Sobre mim</h1>
-          <p class="text-justify lg:text-left leading-8  mt-6 text-gray-500 tracking-widest">
+          <p class=" lg:w-[620px]  text-justify lg:text-left leading-8 text-base/2 mt-6 text-gray-500">
             Meu nome é <span class="text-blue-700 font-bold">
               Fernando dos Santos Muethea
             </span>desenvolvedor front-end com habilidades em React, MongoDB, Node.js
