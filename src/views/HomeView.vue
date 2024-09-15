@@ -19,7 +19,7 @@
 
         </p>
         <div class="contant">
-          <p class=" font-dm-sans">Sou
+          <p class=" font-dm-sans lg:w-[620px]  text-justify lg:text-left leading-8 text-base/2 mt-6 text-gray-500">Sou
             desenvolvedor
             frontEnd com habilidades em
             Reactjs,
@@ -55,7 +55,7 @@
               class="btn  text-white font-bold  w-[106px] h-[50px] lg:w-[146px] lg:h-[62px] hover:bg-white hover:text-custom-pink hover:border bg-blue-700 w-[146px] h-[62px] rounded-xl">Ler
               mais</button>
             <button
-              class="btn btn-secondary w-[106px] h-[50px] lg:w-[146px] lg:h-[62px] rounded-xl text-blue-700 hover:bg-blue-700 hover:text-white font-bold border dark:text-white">Contacto</button>
+              class="border  text-blue-700 font-bold  w-[106px] h-[50px] lg:w-[146px] lg:h-[62px] hover:border  w-[146px] h-[62px] rounded-xl">Contacto</button>
           </div>
         </div>
       </div>
@@ -165,10 +165,10 @@
 
       <div>
         <div class="skills mt-12">
-          <div class="languague grid sm:grid-cols- md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="languague grid sm:grid-cols- md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8">
 
             <div
-              class="card flex gap-4 w-[322px] h-[150px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="card flex gap-4 w-[312px] h-[160px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
               <font-awesome-icon :icon="['fas', 'globe']" class="bg-gray-100 p-2 rounded-full text-blue-700 text-3xl" />
               <div>
                 <h2 class="font-bold">Desenvolvimento Web</h2>
@@ -178,7 +178,7 @@
             </div>
 
             <div
-              class="card flex gap-4 w-[322px] h-[150px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="card flex gap-4 w-[312px] h-[160px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
               <font-awesome-icon :icon="['fas', 'desktop']"
                 class="bg-gray-100 p-2 rounded-full text-blue-700 text-3xl" />
               <div>
@@ -189,7 +189,7 @@
             </div>
 
             <div
-              class="card flex gap-4 w-[322px] h-[150px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="card flex gap-2 w-[312px] h-[160px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
               <font-awesome-icon :icon="['fas', 'user']" class="bg-gray-100 p-2 rounded-full text-blue-700 text-3xl" />
               <div>
                 <h2 class="font-bold">UI/UX Design</h2>
@@ -217,12 +217,12 @@
 
       <div>
         <div class="skills mt-12">
-          <div class="languague grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+          <div class="languague grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 lg:gap-8">
 
 
 
             <div
-              class="portfolio-card  flex gap-4 w-[322px] h-[250px] md:w-[382px] lg:h-[250px] lg:w-[382px] lg:h-[250px] p-3 bg-white rounded-lg border dark:bg-gray-800">
+              class="portfolio-card  flex gap-4 w-[312px] h-[250px] md:w-[382px] lg:h-[250px] lg:w-[382px] lg:h-[250px] p-3 bg-white rounded-lg border dark:bg-gray-800">
 
 
               <div class="flex  flex-col justify-between p-2 leading-normal">
@@ -233,7 +233,7 @@
 
 
             <div
-              class="qfome-card group/item hover:bg-slate-600 hover:text-white transition-colors duration-300 card flex gap-4 w-[322px] h-[250px] md:w-[382px] lg:h-[250px] lg:w-[382px] lg:h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="qfome-card group/item hover:bg-slate-600 hover:text-white transition-colors duration-300 card flex gap-4 w-[312px] h-[250px] md:w-[382px] lg:h-[250px] lg:w-[382px] lg:h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
               <div></div>
               <div>
                 <a class="group/edit invisible group-hover/item:visible transition-opacity duration-300 ease-in-out"
@@ -249,7 +249,7 @@
 
 
             <div
-              class="mysong-card flex gap-4 w-[322px] h-[250px] md:w-[382px] lg:h-[250px]  lg:w-[382px] lg:h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="mysong-card flex gap-4 w-[312px] h-[250px] md:w-[382px] lg:h-[250px]  lg:w-[382px] lg:h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
 
             </div>
 
@@ -350,7 +350,7 @@
 
               <div class="flex justify-end mb-5">
                 <button
-                  class="px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+                  class="px-6 font-bold py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
                   type="submit">
                   Enviar
                 </button>
