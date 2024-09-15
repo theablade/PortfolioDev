@@ -353,11 +353,10 @@
               </div>
 
               <div class="flex justify-end mb-5">
-                <button
-                  class="px-6 font-bold py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
-                  type="submit">
+                <button class="px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
                   Enviar
                 </button>
+                
               </div>
             </form>
           </div>
