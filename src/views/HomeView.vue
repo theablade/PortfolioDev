@@ -19,7 +19,7 @@
 
         </p>
         <div class="contant">
-          <p class=" lg:w-[650px] text-justify mt-6 text-gray-500 tracking-widest font-dm-sans">Sou
+          <p class=" lg:w-[650px] text-justify mt-6 text-gray-500 leading-8  font-dm-sans">Sou
             desenvolvedor
             frontEnd com habilidades em
             Reactjs,
