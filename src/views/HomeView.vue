@@ -281,31 +281,35 @@
             </div>
             <div class="flex gap-1 ">
 
-              <a href="https://www.linkedin.com/in/fernandomuethea/" target="_blank">
+              <a href="https://www.linkedin.com/in/fernandomuethea/" target="_blank" class="flex flex-col">
                 <i class="fa-brands fa-linkedin text-2xl"></i>
+                linkedin
               </a>
               <p class="text-gray-500">@fernandomuethea</p>
 
             </div>
             <div class="flex gap-1 ">
 
-              <a href="https://github.com/Muethea" target="_blank">
+              <a href="https://github.com/Muethea" target="_blank" class="flex flex-col">
                 <i class="fa-brands fa-github text-2xl"></i>
+                github
               </a>
               <p class="text-gray-500">@Muethea</p>
             </div>
             <div class="flex gap-1 ">
 
-              <a href="https://www.behance.net/fernandomuethea">
+              <a href="https://www.behance.net/fernandomuethea" class="flex flex-col">
                 <i class="fa-brands fa-behance text-2xl"></i>
+                behance
               </a>
               <p class="text-gray-500">@fernandomuethea</p>
             </div>
             <div class="flex gap-1 ">
 
 
-              <a href="https://dribbble.com/turasdesigner">
+              <a href="https://dribbble.com/turasdesigner" class="flex flex-col">
                 <i class="fa-brands fa-dribbble text-2xl"></i>
+                dribbble
               </a>
               <p class="text-gray-500">
 
