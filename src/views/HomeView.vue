@@ -10,7 +10,7 @@
           Olá, eu sou
         </span>
         <h1 class="text-blue-700 md:text-3xl">
-          Fernando Muethea
+          Fernando
 
         </h1>
 
