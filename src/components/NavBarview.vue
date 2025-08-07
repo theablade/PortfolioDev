@@ -1,11 +1,10 @@
 <template>
-    <nav class="bg-white navbar fixed w-full border-gray-200 dark:bg-gray-900">
+    <nav class="bg-white navbar fixed w-full border-gray-200 dark:bg-gray-900 w-full z-50">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="#" class="flex items-center space-x-3 dark:text-white rtl:space-x-reverse">
 
-                <span class="self-center flex lg:text-xl font-semibold whitespace-nowrap dark:text-white">
-                    
-                    FrontEnd Prodigy _</span>
+                <img :src="logo" class="logo" alt="Fernando Designer logo" />
+                
             </a>
             <button @click="toggleMenu" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -22,40 +21,41 @@
                     class="flex gap-3 flex-col p-4 md:p-0 mt-4 font-medium sm:bg-white md:bg-white lg:bg-transparent dark:lg:bg-transparent rounded-lg bg-white border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 dark:text-gray-400">
 
                     <li>
-                        <a href="#" @click="setActiveMenu('home')"
+                        <a href="#home" id="home" @click="setActiveMenu('home')" @click.prevent="scrollToSection('#home')"
                             :class="{ 'border-b-2 border-blue-700 text-black p-1 dark:text-gray-100': activeMenu === 'home' }">
                             Home
                         </a>
                     </li>
 
                     <li>
-                        <a href="#sobre" @click="setActiveMenu('sobre')"
+                        <a href="#sobre" @click="setActiveMenu('sobre')" @click.prevent="scrollToSection('#sobre')"
                             :class="{ 'border-b-2 border-blue-700 text-black p-1 dark:text-gray-100': activeMenu === 'sobre' }">
                             Sobre
                         </a>
                     </li>
                     <li>
-                        <a href="#habilidades" @click="setActiveMenu('habilidades')"
+                        <a href="#habilidades" @click="setActiveMenu('habilidades')" @click.prevent="scrollToSection('#habilidades')"
                             :class="{ 'border-b-2 border-blue-700 text-black p-1 dark:text-gray-100': activeMenu === 'habilidades' }">
                             Skills
                         </a>
                     </li>
+                  
+
                     <li>
-                        <a href="#projectos" @click="setActiveMenu('projectos')"
+                        <a href="#servicos" @click="setActiveMenu('servicos')" @click.prevent="scrollToSection('#servicos')"
+                            :class="{ 'border-b-2 border-blue-700 text-black p-1 dark:text-gray-100': activeMenu === 'servicos' }">
+                            Serviços
+                        </a>
+                    </li>
+                      <li>
+                        <a href="#projectos" @click="setActiveMenu('projectos')" @click.prevent="scrollToSection('#projectos')"
                             :class="{ 'border-b-2 border-blue-700 text-black p-1 dark:text-gray-100': activeMenu === 'projectos' }">
                             Projectos
                         </a>
                     </li>
 
                     <li>
-                        <a href="#servicos" @click="setActiveMenu('servicos')"
-                            :class="{ 'border-b-2 border-blue-700 text-black p-1 dark:text-gray-100': activeMenu === 'servicos' }">
-                            Serviços
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#contacto" @click="setActiveMenu('contacto')"
+                        <a href="#contacto" @click="setActiveMenu('contacto')" @click.prevent="scrollToSection('#contacto')"
                             :class="{ 'border-b-2 border-blue-700 text-black p-1 dark:text-gray-100': activeMenu === 'contacto' }">
                             Contacto
                         </a>
@@ -65,12 +65,13 @@
                             <button @click="toggleDarkMode">
                                 <div v-if="!isDarkMode" class="flex items-center space-x-3 rtl:space-x-reverse">
                                     <span class="material-symbols-outlined">
-                                        light_mode
+                                        <img :src="ligthIcon" alt="" srcset="">
                                     </span>
                                 </div>
                                 <div v-else>
                                     <span class="material-symbols-outlined dark:text-gray-300 dark:drop-shadow-2xl">
-                                        dark_mode
+                                                                             <img :src="darkIcon" alt="" srcset="">
+
                                     </span>
                                 </div>
                             </button>
@@ -87,7 +88,32 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+import logo from '@/assets/Logo-01.svg';
+import darkIcon from '@/assets/dark.svg';
+import ligthIcon from '@/assets/ligth.svg';
+
+const sections = ['home', 'sobre', 'habilidades', 'servicos','projectos', 'contacto'];
+
+const handleScroll = () => {
+  const scrollPosition = window.scrollY + 120; // ajuste com base na altura da navbar
+
+  for (let i = sections.length - 1; i >= 0; i--) {
+    const section = document.getElementById(sections[i]);
+    if (section && section.offsetTop <= scrollPosition) {
+      activeMenu.value = sections[i];
+      break;
+    }
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
 
 const isDarkMode = ref(false);
 const isMenuOpen = ref(false);
@@ -121,13 +147,39 @@ const activeMenu = ref('home')
 const setActiveMenu = (item) => {
 
     activeMenu.value = item;
+    isMenuOpen.value = false;
 }
+
+const scrollToSection = (id) => {
+  const section = document.querySelector(id);
+  if (section) {
+    window.scrollTo({
+      top: section.offsetTop - 100, // ajuste conforme a altura da navbar
+      behavior: 'smooth',
+    });
+  }
+  isMenuOpen.value = false;
+  activeMenu.value = id.replace('#', '');
+};
 </script>
 
 <style scoped>
+html {
+  scroll-behavior: smooth;
+}
 .navbar {
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
+}
+
+a img{    
+    width: 43px;
+     height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dark .logo {
+  filter: brightness(0) invert(1); /* deixa o logo branco no dark mode */
 }
 
 .navbar.scrolled {

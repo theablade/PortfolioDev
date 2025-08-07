@@ -1,16 +1,16 @@
 <template>
 
   <NavBarview />
-  <main class=" max-w-screen-xl flex flex-wrap items-center mx-auto p-6">
+  <main class=" scroll-smooth max-w-screen-xl flex flex-wrap items-center mx-auto p-6">
 
-    <div class="about-me mt-[100px] sm:mt-[152px] md:mt-8 lg:mt-[90px] lg:mb-[40px] flex items-center">
+    <div class="about-me mt-[100px] sm:mt-[152px] fade-in  md:mt-8 lg:mt-[90px] lg:mb-[40px] flex items-center">
 
       <div class="inter ">
         <span class="text-gray-500">
           Olá, eu sou
         </span>
         <h1 class="text-blue-700 md:text-3xl">
-          Fernando
+          Fernando Muethea
 
         </h1>
 
@@ -30,12 +30,12 @@
             objetivos.</p>
 
           <div class="social-media flex gap-8  mt-12">
-            <a href="https://www.linkedin.com/in/fernandomuethea/" target="_blank"
+            <a href="https://www.linkedin.com/in/muethea/" target="_blank"
               class="flex flex-col gap-1 dark:text-gray-70 text-center">
               <i class="fa-brands fa-linkedin text-2xl"></i>
               linkdin
             </a>
-            <a href="https://github.com/Muethea" target="_blank"
+            <a href="https://github.com/theablade" target="_blank"
               class="flex flex-col gap-1 dark:text-gray-70 text-center">
               <i class="fa-brands text-2xl fa-github"></i>
               github
@@ -68,27 +68,71 @@
 
     </div>
 
-    <section id="sobre" class="py-16 mt-16 bg-gray-100">
-      <div class="about flex flex-col lg:flex-row items-center justify-between mb-16 lg:mb-0">
-        <!-- Imagem -->
-        <div class="img mb-8 lg:mb-0 lg:mr-8">
-          <img class="object-fill hidden lg:block w-[32rem] aspect-[4/3]" src="../assets/hack.webp" alt="hero" />
-        </div>
+<section id="sobre" class="pt-[90px] scroll-mt-20 dark:bg-gray-800 pb-20 fade-in  overflow-hidden  ">
+      
+        <div class="absolute top-0 dark:bg-gray-800 left-0 w-72 h-72 bg-blue-100 rounded-full  -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 dark:bg-gray-800 right-0 w-96 h-96 bg-blue-50 rounded-full opacity-30 translate-x-1/3 translate-y-1/3"></div>
+        
+        <div class="container-custom dark:bg-gray-800  z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+                <!-- Imagem -->
+                <div class="flex-shrink-0 fade-in">
+                    <div class=" group">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
+                        <img 
+                            class=" z-10 w-full max-w-sm lg:max-w-lg xl:max-w-xl h-auto aspect-[4/3] object-cover rounded-2xl shadow-lg image-hover" 
+                            src="../assets/hack.webp" 
+                            alt="Fernando dos Santos Muethea - Desenvolvedor Front-end"
+                            loading="lazy"
+                        />
+                        <!-- Overlay gradiente sutil -->
+                        <div class="absolute  inset-0 bg-gradient-to-t from-black/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20"></div>
+                    </div>
+                </div>
 
-        <!-- Conteúdo de texto -->
-        <div class="lg:w-3/4 mt-9 lg:mt-0">
-          <h1 class="text-lg lg:text-3xl font-bold text-blue-700">Sobre mim</h1>
-          <p class="mt-6 text-base lg:text-lg text-gray-500 leading-relaxed lg:w-[620px] text-justify lg:text-left">
-            Meu nome é <span class="text-blue-700 font-bold">Fernando dos Santos Muethea</span>, desenvolvedor front-end
-            com habilidades em React, MongoDB, Node.js e design de UI/UX. Com mais de 2 anos de experiência, eu crio
-            soluções web e mobile personalizadas para ajudar os meus clientes a alcançar seus objetivos.
-          </p>
+                <!-- Conteúdo de texto -->
+                <div class="flex-1 text-center lg:text-left  fade-in">
+                    <header class="mb-8">
+                        <h1 class="text-blue-700 md:text-3xl font-bold font-bold gradient-text mb-4">
+                            Sobre mim
+                        </h1>
+                        <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto lg:mx-0 rounded-full"></div>
+                    </header>
+                    
+                    <div class="space-y-6">
+                        <p class="text-gray-500 mt-4 md:text-lg leading-relaxed">
+                            Olá! Meu nome é 
+                            <span class="highlight font-bold text-blue-700">Fernando dos Santos Muethea</span>, 
+                            e sou um desenvolvedor front-end apaixonado por criar experiências digitais incríveis.
+                        </p>
+                        
+                        <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+                            Com mais de <strong class="text-blue-700">2 anos de experiência</strong> no desenvolvimento web, 
+                            especializo-me em <strong class="text-gray-800">React, MongoDB, Node.js</strong> e 
+                            <strong class="text-gray-800">design de UI/UX</strong>. Minha missão é transformar ideias 
+                            em soluções web e mobile personalizadas que realmente fazem a diferença para meus clientes.
+                        </p>
+                        
+                        <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+                            Combino conhecimento técnico sólido com um olhar criativo para design, 
+                            sempre focado em criar interfaces intuitivas e experiências de usuário excepcionais.
+                        </p>
+                    </div>
+
+                    <!-- Skills badges -->
+                    <div class="mt-8 flex flex-wrap gap-3 justify-center lg:justify-start">
+                        <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold hover:bg-blue-200 transition-colors">React</span>
+                        <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold hover:bg-green-200 transition-colors">Node.js</span>
+                        <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-semibold hover:bg-yellow-200 transition-colors">MongoDB</span>
+                        <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold hover:bg-purple-200 transition-colors">UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
 
-    <section class="w-full text-center p-6 mb-[4rem]" id="habilidades">
+    <section class="w-full text-center fade-in p-6 mb-[4rem]" id="habilidades">
       <h1 class="flex justify-center items-center text-center lg:text-2xl text-lg text-blue-700 font-bold">
         Habilidades
       </h1>
@@ -153,7 +197,7 @@
     </section>
 
 
-    <section class="w-full p-6 mb-[4rem]" id="servicos">
+    <section class="w-full p-6 mb-[4rem] fade-in" id="servicos">
       <h1 class="flex justify-center items-center text-center lg:text-2xl text-lg text-blue-700 font-bold">
         Serviços
       </h1>
@@ -197,7 +241,7 @@
         </div>
       </div>
     </section>
-    <section class="w-full p-6 mb-[4rem]" id="projectos">
+    <section class="w-full p-6 mb-[4rem] fade-in" id="projectos">
       <h1 class="flex justify-center items-center text-center lg:text-2xl text-blue-700 font-bold">
         Projectos recentes
       </h1>
@@ -253,7 +297,7 @@
       </div>
     </section>
 
-    <section class="w-full   p-6" id="contacto">
+    <section class="w-full  fade-in p-6" id="contacto">
       <h1 class="flex justify-center items-left text-left text-md md:text-2xl text-blue-700 font-bold">
         Contacto
       </h1>
@@ -261,55 +305,45 @@
 
 
 
-      <div class="skills mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 ">
+      <div class="skills mt-12 grid  grid-cols-1 lg:grid-cols-2 gap-8 ">
         <div class="languague">
           <h1 class="text-sm md:text-2xl font-bold text-blue-700">Entre em contacto hoje</h1>
           <p class="text-sm text-gray-500">Sinta-se a vontade para entrar em contacto comigo!</p>
-          <div class="social-media grid gap-2 hidden md:block  mt-12">
-            <div class="flex gap-1">
+          <div class="social-media2 flex gap-12 hidden md:block  mt-12">
+           
+            <div class="flex gap-4  ">
 
-              <span class="material-symbols-outlined ">
-                mail
-              </span>
-              <p class="text-gray-500">fernandomuethea@gmail.com</p>
-
-            </div>
-            <div class="flex gap-1 ">
-
-              <a href="https://www.linkedin.com/in/fernandomuethea/" target="_blank" class="flex flex-col">
+              <a href="https://www.linkedin.com/in/fernandomuethea/" target="_blank" class=" ">
                 <i class="fa-brands fa-linkedin text-2xl"></i>
                 linkedin
               </a>
-              <p class="text-gray-500">@fernandomuethea</p>
+              
 
             </div>
-            <div class="flex gap-1 ">
+            <div class="flex gap-4 ">
 
-              <a href="https://github.com/Muethea" target="_blank" class="flex flex-col">
+              <a href="https://github.com/theablade" target="_blank" class=" ">
                 <i class="fa-brands fa-github text-2xl"></i>
                 github
               </a>
-              <p class="text-gray-500">@Muethea</p>
-            </div>
-            <div class="flex gap-1 ">
 
-              <a href="https://www.behance.net/fernandomuethea" class="flex flex-col">
+            </div>
+            <div class="flex gap-4 ">
+
+              <a href="https://www.behance.net/fernandomuethea" class=" ">
                 <i class="fa-brands fa-behance text-2xl"></i>
                 behance
               </a>
-              <p class="text-gray-500">@fernandomuethea</p>
+
             </div>
-            <div class="flex gap-1 ">
+            <div class="flex gap-4 ">
 
 
-              <a href="https://dribbble.com/turasdesigner" class="flex flex-col">
+              <a href="https://dribbble.com/turasdesigner" class=" ">
                 <i class="fa-brands fa-dribbble text-2xl"></i>
                 dribbble
               </a>
-              <p class="text-gray-500">
-
-                @turasdesigner
-              </p>
+             
             </div>
 
 
@@ -389,13 +423,13 @@ const form = reactive({
 
 
 const sendEmail = () => {
-  const serviceID = 'service_lo1v6pb'  // Substitua pelo seu serviceID do EmailJS
-  const templateID = 'template_6lnexsl'  // Substitua pelo seu templateID do EmailJS
+  const serviceID = 'service_lo1v6pb' 
+  const templateID = 'template_6lnexsl'  
   const publicKey = 'T4p2tdYDqUsqFJjgK'
 
-  // Os parâmetros que serão enviados para o EmailJS, correspondendo ao template
+ 
   const templateParams = {
-    name: form.name,         // Substitui {{name}} no EmailJS
+    name: form.name,         
     from_name: form.name,    // Substitui {{from_name}} no EmailJS
     email: form.email,
     reply_to: form.email,   // Substitui {{email}} no campo "From Email"
@@ -418,6 +452,16 @@ const sendEmail = () => {
 </script>
 
 <style scoped>
+
+.social-media2{
+  display: flex;
+}
+
+.social-media2 a{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .hr {
   margin-top: 5rem;
   width: 200px;
@@ -425,6 +469,18 @@ const sendEmail = () => {
   transform: rotate(90deg);
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 html {
   scroll-behavior: smooth;
