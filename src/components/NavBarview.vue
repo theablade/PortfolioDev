@@ -161,6 +161,17 @@ const scrollToSection = (id) => {
   isMenuOpen.value = false;
   activeMenu.value = id.replace('#', '');
 };
+
+document.documentElement.classList.toggle(
+  "dark",
+  localStorage.theme === "dark" ||
+    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
+);
+
+localStorage.theme = "light";
+
+localStorage.theme = "dark";
+localStorage.removeItem("theme");
 </script>
 
 <style scoped>

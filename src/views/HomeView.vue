@@ -203,11 +203,11 @@
       </h1>
 
       <div>
-        <div class="skills mt-12">
-          <div class="languague grid sm:grid-cols- md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8">
+        <div class="skills mt-12 ">
+          <div class="languague grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8">
 
             <div
-              class="card flex gap-4 w-[312px] h-[160px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="card flex gap-4 sm:w-[512px] md:w-[312px] h-[160px]  lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
               <font-awesome-icon :icon="['fas', 'globe']" class="bg-gray-100 p-2 rounded-full text-blue-700 text-3xl" />
               <div>
                 <h2 class="font-bold">Desenvolvimento Web</h2>
@@ -217,7 +217,7 @@
             </div>
 
             <div
-              class="card flex gap-4 w-[312px] h-[160px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="card flex gap-4 sm:w-[512px] md:w-[312px] h-[160px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
               <font-awesome-icon :icon="['fas', 'desktop']"
                 class="bg-gray-100 p-2 rounded-full text-blue-700 text-3xl" />
               <div>
@@ -228,7 +228,7 @@
             </div>
 
             <div
-              class="card flex gap-2 w-[312px] h-[160px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="card flex gap-2 sm:w-[512px] md:w-[312px] h-[160px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
               <font-awesome-icon :icon="['fas', 'user']" class="bg-gray-100 p-2 rounded-full text-blue-700 text-3xl" />
               <div>
                 <h2 class="font-bold">UI/UX Design</h2>
@@ -256,12 +256,12 @@
 
       <div>
         <div class="skills mt-12">
-          <div class="languague grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 lg:gap-8">
+          <div class="languague grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 lg:gap-8">
 
 
 
             <div
-              class="portfolio-card  flex gap-4 w-[312px] h-[250px] md:w-[382px] lg:h-[250px] lg:w-[382px] lg:h-[250px] p-3 bg-white rounded-lg border dark:bg-gray-800">
+              class="portfolio-card sm:w-[512px]  flex gap-4 md:w-[312px] h-[250px] md:w-[382px] lg:h-[250px] lg:w-[382px] lg:h-[250px] p-3 bg-white rounded-lg border dark:bg-gray-800">
 
 
               <div class="flex  flex-col justify-between p-2 leading-normal">
@@ -272,7 +272,7 @@
 
 
             <div
-              class="qfome-card group/item hover:bg-slate-600 hover:text-white transition-colors duration-300 card flex gap-4 w-[312px] h-[250px] md:w-[382px] lg:h-[250px] lg:w-[382px] lg:h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="qfome-card group/item  hover:bg-slate-600 hover:text-white transition-colors duration-300 card flex gap-4 sm:w-[512px] md:w-[312px] h-[250px] md:w-[382px] lg:h-[250px] lg:w-[382px] lg:h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
               <div></div>
               <div>
                 <a class="group/edit invisible group-hover/item:visible transition-opacity duration-300 ease-in-out"
@@ -288,7 +288,7 @@
 
 
             <div
-              class="mysong-card flex gap-4 w-[312px] h-[250px] md:w-[382px] lg:h-[250px]  lg:w-[382px] lg:h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="mysong-card flex sm:w-[512px] gap-4  md:w-[382px] lg:h-[250px]  lg:w-[382px] lg:h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
 
             </div>
 
@@ -309,47 +309,36 @@
         <div class="languague">
           <h1 class="text-sm md:text-2xl font-bold text-blue-700">Entre em contacto hoje</h1>
           <p class="text-sm text-gray-500">Sinta-se a vontade para entrar em contacto comigo!</p>
-          <div class="social-media2 flex gap-12 hidden md:block  mt-12">
-           
-            <div class="flex gap-4  ">
+         
+                <div class="social-media2 flex flex-col md:flex-row flex-wrap gap-6 md:gap-12 mt-12 items-start">
+                  <div class="flex items-center gap-2">
+                    <a href="https://www.linkedin.com/in/fernandomuethea/" target="_blank" class="flex items-center gap-2">
+                      <i class="fa-brands fa-linkedin text-2xl"></i>
+                      <span>LinkedIn</span>
+                    </a>
+                  </div>
 
-              <a href="https://www.linkedin.com/in/fernandomuethea/" target="_blank" class=" ">
-                <i class="fa-brands fa-linkedin text-2xl"></i>
-                linkedin
-              </a>
-              
+                  <div class="flex items-center gap-2">
+                    <a href="https://github.com/theablade" target="_blank" class="flex items-center gap-2">
+                      <i class="fa-brands fa-github text-2xl"></i>
+                      <span>GitHub</span>
+                    </a>
+                  </div>
 
-            </div>
-            <div class="flex gap-4 ">
+                  <div class="flex items-center gap-2">
+                    <a href="https://www.behance.net/fernandomuethea" target="_blank" class="flex items-center gap-2">
+                      <i class="fa-brands fa-behance text-2xl"></i>
+                      <span>Behance</span>
+                    </a>
+                  </div>
 
-              <a href="https://github.com/theablade" target="_blank" class=" ">
-                <i class="fa-brands fa-github text-2xl"></i>
-                github
-              </a>
-
-            </div>
-            <div class="flex gap-4 ">
-
-              <a href="https://www.behance.net/fernandomuethea" class=" ">
-                <i class="fa-brands fa-behance text-2xl"></i>
-                behance
-              </a>
-
-            </div>
-            <div class="flex gap-4 ">
-
-
-              <a href="https://dribbble.com/turasdesigner" class=" ">
-                <i class="fa-brands fa-dribbble text-2xl"></i>
-                dribbble
-              </a>
-             
-            </div>
-
-
-
-
-          </div>
+                  <div class="flex items-center gap-2">
+                    <a href="https://dribbble.com/turasdesigner" target="_blank" class="flex items-center gap-2">
+                      <i class="fa-brands fa-dribbble text-2xl"></i>
+                      <span>Dribbble</span>
+                    </a>
+                  </div>
+                </div>
 
 
 
