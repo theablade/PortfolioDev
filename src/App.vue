@@ -1,14 +1,16 @@
 <script setup>
-import HomeView from './views/HomeView.vue';
+import { defineAsyncComponent } from 'vue'
+
+const HomeView = defineAsyncComponent(() => import('./views/HomeView.vue'))
 </script>
 
 <template>
-  <HomeView />
+  <Suspense>
+    <template #default>
+      <HomeView />
+    </template>
+    <template #fallback>
+      <div class="text-center mt-8">Carregando...</div>
+    </template>
+  </Suspense>
 </template>
-
-<style>
-body {
-  font-family: "DS Sans", sans-serif;
-
-}
-</style>
