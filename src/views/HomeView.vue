@@ -29,13 +29,14 @@
             de experiência, eu crio soluções web e mobile personalizadas. para ajudar os meus clientes a alcançar seus
             objetivos.</p>
 
-           <div class="social-media2 flex flex-col md:flex-row flex-wrap gap-6 md:gap-12 mt-12 items-start">
-            <div v-for="social in socials" :key="social.name" class="flex items-center gap-2">
-              <a :href="social.url" target="_blank" class="flex items-center gap-2">
-                <font-awesome-icon :icon="['fab', social.icon]" class="text-2xl" />
-                <span>{{ social.name }}</span>
-              </a>
-            </div>
+          <div class="social-media flex gap-8  mt-12">
+            
+              <div v-for="social in socials" :key="social.name" class="flex items-center gap-2">
+                <a :href="social.url" target="_blank" class="flex items-center gap-2">
+                  <font-awesome-icon :icon="['fab', social.icon]" class="text-2xl" />
+                  <span>{{ social.name }}</span>
+                </a>
+              </div>
           </div>
           <div class="btns mt-12 flex gap-5 lg:gap-12">
             <button
@@ -47,8 +48,12 @@
         </div>
       </div>
       <div class="img ">
-        <img class="object-fill hidden lg:grid md:w-[92rem] aspect-[16/12]" src="../assets/Vector-1.webp" alt="hero"
-          loading="lazy" />
+                <img
+        class="hidden lg:grid md:w-[92rem] object-contain"
+        src="../assets/Vector-1.webp"
+        alt="hero"
+        loading="lazy"
+      />
       </div>
 
 
