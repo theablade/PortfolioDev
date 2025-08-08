@@ -3,8 +3,20 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
             <a href="#" class="flex items-center space-x-3 dark:text-white rtl:space-x-reverse">
 
-                <img :src="logo" class="logo" alt="Fernando Designer logo" />
-                
+
+                 <img 
+                        src="../assets/logo-298.webp"
+                        srcset="
+                          ../assets/logo-298.webp 298w,
+                          ../assets/logo-364.webp 364w,
+                          ../assets/logo-600.webp 600w
+                        "
+                        sizes="(max-width: 600px) 100vw, 364px"
+                     
+                        fetchpriority="high"
+                         alt="Logo FrontEnd Developer"
+                        class="w-full max-w-xl h-auto object-cover logo"
+                      />
             </a>
             <button @click="toggleMenu" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -89,7 +101,6 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
-import logo from '@/assets/Logo-01.svg';
 import darkIcon from '@/assets/dark.svg';
 import ligthIcon from '@/assets/ligth.svg';
 
