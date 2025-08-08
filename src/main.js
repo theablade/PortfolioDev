@@ -13,9 +13,6 @@ import router from './router'
 const app = createApp(App)
 library.add(fas, fab)
 
-// Crie a aplicação Vue
-
-// Registre o componente FontAwesomeIcon globalmente
 app.component('font-awesome-icon', FontAwesomeIcon)
 
 app.use(createPinia())

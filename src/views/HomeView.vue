@@ -266,7 +266,7 @@
             href="https://www.behance.net/gallery/147981059/Move?tracking_source=project_owner_other_projects" target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >Move</span>
             
-            <img :src="move" alt="" srcset="">
+            <img  loading="lazy"  :src="move" width="300" height="200"  alt="" srcset="">
           </a>
         </div>
         </div>
@@ -280,7 +280,7 @@
             href="https://www.behance.net/gallery/164374263/Design-de-aplicativo-de-entrega-de-comida" target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >QFome App</span>
             
-            <img :src="qfome" alt="" srcset="">
+            <img width="300" height="200"  loading="lazy"  :src="qfome" alt="" srcset="">
           </a>
         </div>
       </div>
@@ -295,7 +295,7 @@
             href="https://www.behance.net/gallery/164549369/Design-de-app-music?tracking_source=project_owner_other_projects" target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >MySongGx </span>
             
-            <img :src="sonG" alt="" srcset="">
+            <img  loading="lazy" width="300" height="200"   :src="sonG" alt="" srcset="">
           </a>
         </div>
       </div>
