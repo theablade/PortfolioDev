@@ -411,9 +411,9 @@
 import { reactive } from 'vue'
 import emailjs from 'emailjs-com'
 import NavBarview from '@/components/NavBarview.vue';
-import move from '@/assets/move.png';
-import qfome from '@/assets/Apresentacao.png';
-import sonG from '@/assets/Song.png';
+import move from '@/assets/move.webp';
+import qfome from '@/assets/Apresentacao.webp';
+import sonG from '@/assets/Song.webp';
 
 
 
