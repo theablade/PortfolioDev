@@ -48,14 +48,10 @@
         </div>
       </div>
       <div class="img ">
-        <img
-  class="hidden lg:grid max-w-full h-auto md:w-[92rem] object-contain"
- src="../assets/Vector-1.webp"
-  alt="hero"
-  loading="lazy"
-/>
+        <img class="object-fill hidden lg:grid md:w-[92rem] aspect-[16/12]" src="../assets/Vector-1.webp" alt="hero"
+          loading="lazy" />
+
       
-             
       </div>
 
 
