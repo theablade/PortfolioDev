@@ -65,18 +65,13 @@
                 <div class="flex-shrink-0 fade-in">
                     <div class=" group">
                         <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
-                                        <img
-                    src="../assets/hack-364.webp"
-                    srcset="
-                      ../assets/hack-298.webp 298w,
-                      ../assets/hack-364.webp 364w,
-                      ../assets/hack-600.webp 600w
-                    "
-                    sizes="(max-width: 600px) 100vw, 364px"
-                    alt="Descrição da imagem"
-                    fetchpriority="high"
-                    class="z-10 w-full max-w-sm lg:max-w-lg xl:max-w-xl h-auto aspect-[4/3] object-cover"
-                  />
+                        <img 
+                            class=" z-10 w-full max-w-sm lg:max-w-lg xl:max-w-xl h-auto aspect-[4/3] object-cover rounded-2xl shadow-lg image-hover" 
+                            src="../assets/hack.webp" 
+                             fetchpriority="high"
+                            alt="Fernando dos Santos Muethea - Desenvolvedor Front-end"
+                            
+                        />
                         <!-- Overlay gradiente sutil -->
                         <div class="absolute  inset-0 bg-gradient-to-t from-black/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20"></div>
                     </div>
