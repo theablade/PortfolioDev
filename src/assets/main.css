@@ -1,29 +1,26 @@
+/* src/assets/styles.css */
+
 @import './base.css';
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* src/assets/styles.css */
 @font-face {
   font-family: 'DMSans';
-  src: url('@/assets/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+  src: url('/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal; 
+  font-style: normal;
   font-display: swap;
 }
 
 body {
   @apply bg-white text-gray-900;
   font-family: 'DMSans';
-  src: url('@/assets/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal; 
 }
 
 .dark body {
   @apply bg-gray-900 text-white;
 }
-
 
 .dark .bg-white {
   @apply bg-gray-800;
