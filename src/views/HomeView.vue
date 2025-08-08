@@ -29,26 +29,13 @@
             de experiência, eu crio soluções web e mobile personalizadas. para ajudar os meus clientes a alcançar seus
             objetivos.</p>
 
-          <div class="social-media flex gap-8  mt-12">
-            <a href="https://www.linkedin.com/in/muethea/" target="_blank"
-              class="flex flex-col gap-1 dark:text-gray-70 text-center">
-              <i class="fa-brands fa-linkedin text-2xl"></i>
-              linkdin
-            </a>
-            <a href="https://github.com/theablade" target="_blank"
-              class="flex flex-col gap-1 dark:text-gray-70 text-center">
-              <i class="fa-brands text-2xl fa-github"></i>
-              github
-            </a>
-            <a href="https://www.behance.net/fernandomuethea" class="flex flex-col gap-1 dark:text-gray-70 text-center">
-              <i class="fa-brands text-2xl fa-behance"></i>
-              behance
-
-            </a>
-            <a href="https://dribbble.com/turasdesigner" class="flex flex-col gap-1 dark:text-gray-70 text-center">
-              <i class="fa-brands text-2xl fa-dribbble"></i>
-              dribbble
-            </a>
+           <div class="social-media2 flex flex-col md:flex-row flex-wrap gap-6 md:gap-12 mt-12 items-start">
+            <div v-for="social in socials" :key="social.name" class="flex items-center gap-2">
+              <a :href="social.url" target="_blank" class="flex items-center gap-2">
+                <font-awesome-icon :icon="['fab', social.icon]" class="text-2xl" />
+                <span>{{ social.name }}</span>
+              </a>
+            </div>
           </div>
           <div class="btns mt-12 flex gap-5 lg:gap-12">
             <button
@@ -142,52 +129,67 @@
           <div class="languague grid grid-cols-2 md:grid-cols-5 gap-8 justify-items-center">
 
             <div class="card w-32 p-8 bg-white rounded-lg shadow-2xl dark:bg-gray-800">
-              <i class="fa-brands text-blue-700 fa-react text-3xl"></i>
+
+              <font-awesome-icon :icon="['fab', 'react']" size="3x" class="text-blue-700" />
+
               <p class="mt-2 text-sm text-gray-500">React</p>
             </div>
 
             <div class="card w-32 p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
-              <i class="fa-brands text-green-700 fa-vuejs text-3xl"></i>
+              <font-awesome-icon :icon="['fab', 'vuejs']" size="3x" class="text-green-700" />
+
               <p class="mt-2 text-sm text-gray-500">Vue.js</p>
             </div>
 
             <div class="card w-32 p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
-              <i class="fa-brands text-green-500 fa-node-js text-3xl"></i>
+
+              <font-awesome-icon :icon="['fab', 'node-js']" size="3x" class="text-green-500" />
+
               <p class="mt-2 text-sm text-gray-500">Node.js</p>
             </div>
 
             <div class="card w-32 p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
-              <i class="fa-brands text-yellow-500 fa-js text-3xl"></i>
+              <font-awesome-icon :icon="['fab', 'js']" size="3x" class="text-yellow-500" />
+
               <p class="mt-2 text-sm text-gray-500">JavaScript</p>
             </div>
 
             <div class="card w-32 p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
-              <i class="fa-brands text-purple-500 fa-sass text-3xl"></i>
+            
+              <font-awesome-icon :icon="['fab', 'sass']" size="3x" class="text-purple-500" />
+
               <p class="mt-2 text-sm text-gray-500">Sass</p>
             </div>
 
             <div class="card w-32 p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
-              <i class="fa-brands text-fuchsia-600 fa-bootstrap text-3xl"></i>
+
+              <font-awesome-icon :icon="['fab', 'bootstrap']" size="3x" class="text-fuchsia-600" />
+
               <p class="mt-2 text-sm text-gray-500">Bootstrap</p>
             </div>
 
             <div class="card w-32 p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
-              <i class="fa-brands text-orange-700 fa-html5 text-3xl"></i>
+   
+              <font-awesome-icon :icon="['fab', 'html5']" size="3x" class="text-orange-700" />
+
               <p class="mt-2 text-sm text-gray-500">HTML5</p>
             </div>
 
             <div class="card w-32 p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
-              <i class="fa-brands text-sky-500 fa-css3-alt text-3xl"></i>
+              <font-awesome-icon :icon="['fab', 'css3-alt']" size="3x" class="text-sky-700" />
+
               <p class="mt-2 text-sm text-gray-500">CSS3</p>
             </div>
 
             <div class="card w-32 p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
-              <i class="fa-brands fa-laravel text-red-800 dark:text-red-400 text-3xl"></i>
+              <font-awesome-icon :icon="['fab', 'code']" size="3x" class="text-green-700" />
+
               <p class="mt-2 text-sm text-gray-500">Laravel</p>
             </div>
 
             <div class="card w-32 p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
-              <i class="fa-brands fa-figma text-blue-800 text-3xl"></i>
+              <font-awesome-icon :icon="['fab', 'figma']" size="3x" class="text-blue-800" />
+
               <p class="mt-2 text-sm text-gray-500">Figma</p>
             </div>
 
@@ -318,36 +320,14 @@
           <h1 class="text-sm md:text-2xl font-bold text-blue-700">Entre em contacto hoje</h1>
           <p class="text-sm text-gray-500">Sinta-se a vontade para entrar em contacto comigo!</p>
          
-                <div class="social-media2 flex flex-col md:flex-row flex-wrap gap-6 md:gap-12 mt-12 items-start">
-                  <div class="flex items-center gap-2">
-                    <a href="https://www.linkedin.com/in/fernandomuethea/" target="_blank" class="flex items-center gap-2">
-                      <i class="fa-brands fa-linkedin text-2xl"></i>
-                      <span>LinkedIn</span>
-                    </a>
-                  </div>
-
-                  <div class="flex items-center gap-2">
-                    <a href="https://github.com/theablade" target="_blank" class="flex items-center gap-2">
-                      <i class="fa-brands fa-github text-2xl"></i>
-                      <span>GitHub</span>
-                    </a>
-                  </div>
-
-                  <div class="flex items-center gap-2">
-                    <a href="https://www.behance.net/fernandomuethea" target="_blank" class="flex items-center gap-2">
-                      <i class="fa-brands fa-behance text-2xl"></i>
-                      <span>Behance</span>
-                    </a>
-                  </div>
-
-                  <div class="flex items-center gap-2">
-                    <a href="https://dribbble.com/turasdesigner" target="_blank" class="flex items-center gap-2">
-                      <i class="fa-brands fa-dribbble text-2xl"></i>
-                      <span>Dribbble</span>
+                 <div class="social-media2 flex flex-col md:flex-row flex-wrap gap-6 md:gap-12 mt-12 items-start">
+                  <div v-for="social in socials" :key="social.name" class="flex items-center gap-2">
+                    <a :href="social.url" target="_blank" class="flex items-center gap-2">
+                      <font-awesome-icon :icon="['fab', social.icon]" class="text-2xl" />
+                      <span>{{ social.name }}</span>
                     </a>
                   </div>
                 </div>
-
 
 
         </div>
@@ -408,14 +388,27 @@
 
 
 <script setup>
-import { reactive } from 'vue'
+import { reactive, ref } from 'vue'
 import emailjs from 'emailjs-com'
 import NavBarview from '@/components/NavBarview.vue';
 import move from '@/assets/move.webp';
 import qfome from '@/assets/Apresentacao.webp';
 import sonG from '@/assets/Song.webp';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faLinkedin, faGithub, faBehance, faDribbble } from '@fortawesome/free-brands-svg-icons'
+
+library.add(faLinkedin, faGithub, faBehance, faDribbble)
 
 
+
+
+const socials = ref([
+  { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/in/fernandomuethea/' },
+  { name: 'GitHub', icon: 'github', url: 'https://github.com/theablade' },
+  { name: 'Behance', icon: 'behance', url: 'https://www.behance.net/fernandomuethea' },
+  { name: 'Dribbble', icon: 'dribbble', url: 'https://dribbble.com/turasdesigner' },
+])
 
 
 const form = reactive({
@@ -426,32 +419,27 @@ const form = reactive({
 
 
 const sendEmail = () => {
-  const serviceID = 'service_lo1v6pb' 
-  const templateID = 'template_6lnexsl'  
-  const publicKey = 'T4p2tdYDqUsqFJjgK'
+  const serviceID = 'service_lo1v6pb';
+  const templateID = 'template_6lnexsl';
+  const publicKey = 'T4p2tdYDqUsqFJjgK';
 
- 
   const templateParams = {
-    name: form.name,         
-    from_name: form.name,    // Substitui {{from_name}} no EmailJS
-    email: form.email,
-    reply_to: form.email,   // Substitui {{email}} no campo "From Email"
-    message: form.message    // Substitui {{message}} no EmailJS
-  }
+    from_name: form.name,
+    from_email: form.email,
+    message: form.message
+  };
 
-  // Envia o e-mail usando EmailJS
   emailjs.send(serviceID, templateID, templateParams, publicKey)
     .then(() => {
-      alert('Mensagem enviada com sucesso!')
-      // Limpa o formulário após o envio
-      form.name = ''
-      form.email = ''
-      form.message = ''
-    })
-    .catch((error) => {
-      alert('Erro ao enviar mensagem: ' + error.text)
-    })
-}
+      alert('Mensagem enviada com sucesso!');
+      form.name = '';
+      form.email = '';
+      form.message = '';
+    }, (error) => {
+      alert('Erro ao enviar a mensagem: ' + error.text);
+    });
+};
+
 </script>
 
 <style scoped>
