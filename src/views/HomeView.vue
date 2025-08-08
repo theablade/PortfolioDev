@@ -18,34 +18,30 @@
           Desenvolvedor Front-end e UI/Ux Design.
 
         </p>
-        <div class="contant">
-          <p class=" font-dm-sans lg:w-[620px]  text-justify lg:text-left leading-8 text-base/2 mt-6 text-gray-500">Sou
-            desenvolvedor
-            frontEnd com habilidades em
-            Reactjs,
-            Vuejs, Node.js e
-            UI/UX Design. Com
-            mais de 2 anos
-            de experiência, eu crio soluções web e mobile personalizadas. para ajudar os meus clientes a alcançar seus
-            objetivos.</p>
+        <div class="contant max-w-screen-lg mx-auto px-4">
+          <p class="font-dm-sans text-justify lg:text-left leading-8 text-base/2 mt-6 text-gray-500 max-w-full lg:max-w-[620px]">
+            Sou desenvolvedor frontEnd com habilidades em Reactjs, Vuejs, Node.js e UI/UX Design. Com mais de 2 anos de experiência, eu crio soluções web e mobile personalizadas para ajudar os meus clientes a alcançar seus objetivos.
+          </p>
 
-          <div class="social-media flex gap-8  mt-12">
-            
-              <div v-for="social in socials" :key="social.name" class="flex items-center gap-2">
-                <a :href="social.url" target="_blank" class="flex items-center gap-2">
-                  <font-awesome-icon :icon="['fab', social.icon]" class="text-2xl" />
-                  <span>{{ social.name }}</span>
-                </a>
-              </div>
+          <div class="social-media flex flex-wrap gap-8 mt-12">
+            <div v-for="social in socials" :key="social.name" class="flex items-center gap-2">
+              <a :href="social.url" target="_blank" class="flex items-center gap-2">
+                <font-awesome-icon :icon="['fab', social.icon]" class="text-2xl" />
+                <span>{{ social.name }}</span>
+              </a>
+            </div>
           </div>
+
           <div class="btns mt-12 flex gap-5 lg:gap-12">
-            <button
-              class="btn  text-white font-bold  w-[106px] h-[50px] lg:w-[146px] lg:h-[62px] hover:bg-white hover:text-custom-pink hover:border bg-blue-700 w-[146px] h-[62px] rounded-xl">Ler
-              mais</button>
-            <button
-              class="border  text-blue-700 font-bold  w-[106px] h-[50px] lg:w-[146px] lg:h-[62px] hover:border  w-[146px] h-[62px] rounded-xl">Contacto</button>
+            <button class="btn text-white font-bold w-32 h-12 lg:w-[146px] lg:h-[62px] hover:bg-white hover:text-custom-pink hover:border bg-blue-700 rounded-xl">
+              Ler mais
+            </button>
+            <button class="border text-blue-700 font-bold w-32 h-12 lg:w-[146px] lg:h-[62px] hover:border rounded-xl">
+              Contacto
+            </button>
           </div>
-        </div>
+</div>
+
       </div>
       <div class="img ">
         <img class="object-fill hidden lg:grid md:w-[92rem] aspect-[16/12]" src="../assets/Vector-1.webp" alt="hero"
