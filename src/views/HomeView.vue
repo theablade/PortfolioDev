@@ -271,7 +271,19 @@
             href="https://www.behance.net/gallery/147981059/Move?tracking_source=project_owner_other_projects" target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >Move</span>
             
-            <img  loading="lazy"  :src="move" alt="" srcset="">
+            <img
+                src="../assets/imagem-move-298.webp"
+                srcset="
+                  ../assets/imagem-move-298.webp 298w,
+                  ../assets/imagem-move-600.webp 600w,
+                  ../assets/imagem-move-1000.webp 1000w
+                "
+                sizes="(max-width: 600px) 100vw, 600px"
+                alt="Descrição da imagem"
+                loading="lazy"
+                width="298"
+                height="168"
+/>
           </a>
         </div>
         </div>
@@ -285,7 +297,19 @@
             href="https://www.behance.net/gallery/164374263/Design-de-aplicativo-de-entrega-de-comida" target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >QFome App</span>
             
-            <img   loading="lazy"  :src="qfome" alt="" srcset="">
+            <img
+                src="../assets/imagem-qfome-298.webp"
+                srcset="
+                  ../assets/imagem-qfome-298.webp 298w,
+                  ../assets/imagem-qfome-600.webp 600w,
+                  ../assets/imagem-qfome-1000.webp 1000w
+                "
+                sizes="(max-width: 600px) 100vw, 600px"
+                alt="Descrição da imagem"
+                loading="lazy"
+                width="298"
+                height="168"
+/>
           </a>
         </div>
       </div>
@@ -300,7 +324,20 @@
             href="https://www.behance.net/gallery/164549369/Design-de-app-music?tracking_source=project_owner_other_projects" target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >MySongGx </span>
             
-            <img  loading="lazy"  :src="sonG" alt="" srcset="">
+            <img
+                src="../assets/imagem-song-298.webp"
+                srcset="
+                  ../assets/imagem-song-298.webp 298w,
+                  ../assets/imagem-song-600.webp 600w,
+                  ../assets/imagem-song-1000.webp 1000w
+                "
+                sizes="(max-width: 600px) 100vw, 600px"
+                alt="Descrição da imagem"
+                loading="lazy"
+                width="298"
+                height="168"
+/>
+
           </a>
         </div>
       </div>
@@ -394,9 +431,6 @@
 import { reactive, ref } from 'vue'
 import emailjs from 'emailjs-com'
 import NavBarview from '@/components/NavBarview.vue';
-import move from '@/assets/move.webp';
-import qfome from '@/assets/Apresentacao.webp';
-import sonG from '@/assets/Song.webp';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faLinkedin, faGithub, faBehance, faDribbble } from '@fortawesome/free-brands-svg-icons'
