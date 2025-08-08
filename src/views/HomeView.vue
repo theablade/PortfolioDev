@@ -207,7 +207,7 @@
           <div class="languague grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8">
 
             <div
-              class="card flex gap-4 sm:w-[512px] md:w-[312px] h-[160px]  lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="card flex gap-4   p-8 bg-white rounded-lg border dark:bg-gray-800">
               <font-awesome-icon :icon="['fas', 'globe']" class="bg-gray-100 p-2 rounded-full text-blue-700 text-3xl" />
               <div>
                 <h2 class="font-bold">Desenvolvimento Web</h2>
@@ -217,7 +217,7 @@
             </div>
 
             <div
-              class="card flex gap-4 sm:w-[512px] md:w-[312px] h-[160px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="card flex gap-4   p-8 bg-white rounded-lg border dark:bg-gray-800">
               <font-awesome-icon :icon="['fas', 'desktop']"
                 class="bg-gray-100 p-2 rounded-full text-blue-700 text-3xl" />
               <div>
@@ -228,7 +228,7 @@
             </div>
 
             <div
-              class="card flex gap-2 sm:w-[512px] md:w-[312px] h-[160px] lg:w-[382px] h-[150px]  p-8 bg-white rounded-lg border dark:bg-gray-800">
+              class="card flex gap-2   p-8 bg-white rounded-lg border dark:bg-gray-800">
               <font-awesome-icon :icon="['fas', 'user']" class="bg-gray-100 p-2 rounded-full text-blue-700 text-3xl" />
               <div>
                 <h2 class="font-bold">UI/UX Design</h2>
@@ -241,61 +241,69 @@
         </div>
       </div>
     </section>
-    <section class="w-full p-6 mb-[4rem] fade-in" id="projectos">
-      <h1 class="flex justify-center items-center text-center lg:text-2xl text-blue-700 font-bold">
-        Projectos recentes
-      </h1>
-      <div class="category flex gap-3 mt-[2rem] justify-center lg:text-sm text-sm items-center text-center">
-        <button class="active border-b-2 border-blue-700">Tudo</button>
-        <button class="text-gray-500">Desenvolvimento Web</button>
-        <button class="text-gray-500">Web Design</button>
-        <button class="text-gray-500">UI/UX Design</button>
+   <section class="w-full px-4 sm:px-6 mb-16 fade-in" id="projectos">
+  <h1 class="text-center text-xl sm:text-2xl lg:text-3xl text-blue-700 font-bold">
+    Projectos recentes
+  </h1>
 
+  <div class="category flex flex-wrap justify-center gap-4 mt-8 text-sm sm:text-base">
+    <button class="active border-b-2 border-blue-700">Tudo</button>
+    <button class="text-gray-500 hover:text-blue-700 transition">Desenvolvimento Web</button>
+    <button class="text-gray-500 hover:text-blue-700 transition">Web Design</button>
+    <button class="text-gray-500 hover:text-blue-700 transition">UI/UX Design</button>
+  </div>
 
-      </div>
-
-      <div>
-        <div class="skills mt-12">
-          <div class="languague grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 lg:gap-8">
-
-
-
-            <div
-              class="portfolio-card sm:w-[512px]  flex gap-4 md:w-[312px] h-[250px] md:w-[382px] lg:h-[250px] lg:w-[382px] lg:h-[250px] p-3 bg-white rounded-lg border dark:bg-gray-800">
-
-
-              <div class="flex  flex-col justify-between p-2 leading-normal">
-                <h2 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">Desenvolvimento Web</h2>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
-              </div>
-            </div>
-
-
-            <div
-              class="qfome-card group/item  hover:bg-slate-600 hover:text-white transition-colors duration-300 card flex gap-4 sm:w-[512px] md:w-[312px] h-[250px] md:w-[382px] lg:h-[250px] lg:w-[382px] lg:h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
-              <div></div>
-              <div>
-                <a class="group/edit invisible group-hover/item:visible transition-opacity duration-300 ease-in-out"
-                  href="https://www.behance.net/gallery/164374263/Design-de-aplicativo-de-entrega-de-comida">
-                  <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out">Call</span>
-                  <svg
-                    class="group-hover/edit:translate-x-0.5 group-hover/edit:text-white transition-transform duration-300 ease-in-out">
-                    <use xlink:href="#call"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-
-            <div
-              class="mysong-card flex sm:w-[512px] gap-4  md:w-[382px] lg:h-[250px]  lg:w-[382px] lg:h-[250px] p-8 bg-white rounded-lg border dark:bg-gray-800">
-
-            </div>
-
-          </div>
+  <div class="skills mt-12">
+    <div class="languague grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      
+      <!-- Card 1 -->
+      <div class="portfolio-card w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800">
+        <div class="flex flex-col justify-between leading-normal">
+           <div class="flex flex-col justify-between h-full">
+          <div class="mb-4"></div>
+          <a class="group/edit  duration-300 ease-in-out"
+            href="https://www.behance.net/gallery/147981059/Move?tracking_source=project_owner_other_projects" target="_blank">
+            <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >Move</span>
+            
+            <img :src="move" alt="" srcset="">
+          </a>
+        </div>
         </div>
       </div>
-    </section>
+
+      <!-- Card 2 -->
+      <div class="qfome-card group/item w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800 hover:bg-slate-600 hover:text-white transition-colors duration-300">
+        <div class="flex flex-col justify-between h-full">
+          <div class="mb-4"></div>
+          <a class="group/edit  duration-300 ease-in-out"
+            href="https://www.behance.net/gallery/164374263/Design-de-aplicativo-de-entrega-de-comida" target="_blank">
+            <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >QFome App</span>
+            
+            <img :src="qfome" alt="" srcset="">
+          </a>
+        </div>
+      </div>
+
+      
+
+      <!-- Card 3 -->
+      <div class="mysong-card w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800">
+        <div class="flex flex-col justify-between h-full">
+          <div class="mb-4"></div>
+          <a class="group/edit  duration-300 ease-in-out"
+            href="https://www.behance.net/gallery/164549369/Design-de-app-music?tracking_source=project_owner_other_projects" target="_blank">
+            <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >MySongGx </span>
+            
+            <img :src="sonG" alt="" srcset="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <section class="w-full  fade-in p-6" id="contacto">
       <h1 class="flex justify-center items-left text-left text-md md:text-2xl text-blue-700 font-bold">
@@ -403,6 +411,12 @@
 import { reactive } from 'vue'
 import emailjs from 'emailjs-com'
 import NavBarview from '@/components/NavBarview.vue';
+import move from '@/assets/move.png';
+import qfome from '@/assets/Apresentacao.png';
+import sonG from '@/assets/Song.png';
+
+
+
 
 const form = reactive({
   name: '',
