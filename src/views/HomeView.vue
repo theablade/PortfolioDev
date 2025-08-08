@@ -68,7 +68,7 @@
 
     </div>
 
-<section id="sobre" class="pt-[90px] scroll-mt-20 dark:bg-gray-800 pb-20 fade-in  overflow-hidden  ">
+<section id="sobre" class="pt-[90px] scroll-mt-20 dark:bg-gray-800 pb-20 fade-in  mt-5 overflow-hidden  ">
       
         <div class="absolute top-0 dark:bg-gray-800 left-0 w-72 h-72 bg-blue-100 rounded-full  -translate-x-1/2 -translate-y-1/2"></div>
         <div class="absolute bottom-0 dark:bg-gray-800 right-0 w-96 h-96 bg-blue-50 rounded-full opacity-30 translate-x-1/3 translate-y-1/3"></div>
@@ -91,7 +91,7 @@
                 </div>
 
                 <!-- Conteúdo de texto -->
-                <div class="flex-1 text-center lg:text-left  fade-in">
+                <div class="flex-1 text-center lg:text-left p-2  fade-in">
                     <header class="mb-8">
                         <h1 class="text-blue-700 md:text-3xl font-bold font-bold gradient-text mb-4">
                             Sobre mim
@@ -106,10 +106,10 @@
                             e sou um desenvolvedor front-end apaixonado por criar experiências digitais incríveis.
                         </p>
                         
-                        <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+                        <p class="text-base md:text-lg  text-gray-600 leading-relaxed">
                             Com mais de <strong class="text-blue-700">2 anos de experiência</strong> no desenvolvimento web, 
-                            especializo-me em <strong class="text-gray-800">React, MongoDB, Node.js</strong> e 
-                            <strong class="text-gray-800">design de UI/UX</strong>. Minha missão é transformar ideias 
+                            especializo-me em <strong class="text-gray-800 dark:text-blue-400">React, MongoDB, Node.js</strong> e 
+                            <strong class="text-gray-800 dark:text-blue-400">design de UI/UX</strong>. Minha missão é transformar ideias 
                             em soluções web e mobile personalizadas que realmente fazem a diferença para meus clientes.
                         </p>
                         
