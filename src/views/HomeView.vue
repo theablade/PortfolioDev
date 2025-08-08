@@ -47,14 +47,16 @@
           </div>
         </div>
       </div>
-      <div class="img ">
-                <img
-        class="hidden lg:grid md:w-[92rem] object-contain"
-        src="../assets/Vector-1.webp"
-        alt="hero"
-        loading="lazy"
-      />
-      </div>
+    <div class="img">
+  <img
+    class="hidden lg:block md:max-w-full w-full object-contain"
+    src="../assets/Vector-1.webp"
+    alt="hero"
+    decoding="async"
+    fetchpriority="high"
+  />
+</div>
+
 
 
 
