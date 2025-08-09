@@ -25,3 +25,12 @@ body {
 .dark .bg-white {
   @apply bg-gray-800;
 }
+
+body.menu-open main,
+body.menu-open section,
+body.menu-open footer {
+  filter: blur(2px);
+  pointer-events: none; /* Evita cliques no conteúdo de trás */
+  user-select: none;
+  transition: filter 0.3s ease;
+}

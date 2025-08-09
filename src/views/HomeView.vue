@@ -187,12 +187,7 @@
               <p class="mt-2 text-sm text-gray-500">CSS3</p>
             </div>
 
-            <div class="card w-32 p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
-              <font-awesome-icon :icon="['fab', 'code']" size="3x" class="text-green-700" />
-
-              <p class="mt-2 text-sm text-gray-500">Laravel</p>
-            </div>
-
+        
             <div class="card w-32 p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
               <font-awesome-icon :icon="['fab', 'figma']" size="3x" class="text-blue-800" />
 
@@ -255,10 +250,29 @@
   </h1>
 
   <div class="category flex flex-wrap justify-center gap-4 mt-8 text-sm sm:text-base">
-    <button class="active border-b-2 border-blue-700">Tudo</button>
-    <button class="text-gray-500 hover:text-blue-700 transition">Desenvolvimento Web</button>
-    <button class="text-gray-500 hover:text-blue-700 transition">Web Design</button>
-    <button class="text-gray-500 hover:text-blue-700 transition">UI/UX Design</button>
+   <button 
+      :class="selectedCategory === 'all' ? 'active border-b-2 border-blue-700' : 'text-gray-500 hover:text-blue-700 transition'"
+      @click="selectedCategory = 'all'">
+      Tudo
+    </button>
+
+    <button 
+      :class="selectedCategory === 'web' ? 'active border-b-2 border-blue-700' : 'text-gray-500 hover:text-blue-700 transition'"
+      @click="selectedCategory = 'web'">
+      Desenvolvimento Web
+    </button>
+
+    <button 
+      :class="selectedCategory === 'design' ? 'active border-b-2 border-blue-700' : 'text-gray-500 hover:text-blue-700 transition'"
+      @click="selectedCategory = 'design'">
+      Web Design
+    </button>
+
+    <button 
+      :class="selectedCategory === 'uiux' ? 'active border-b-2 border-blue-700' : 'text-gray-500 hover:text-blue-700 transition'"
+      @click="selectedCategory = 'uiux'">
+      UI/UX Design
+    </button>
   </div>
 
   <div class="skills mt-12">
@@ -266,7 +280,7 @@
       
       
       <!-- Card 1 -->
-      <div class="portfolio-card w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800">
+      <div class="portfolio-card w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800"  v-if="selectedCategory === 'all' || selectedCategory === 'web'">
         <div class="flex flex-col justify-between leading-normal">
            <div class="flex flex-col justify-between h-full">
           <div class="mb-4"></div>
@@ -293,7 +307,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="qfome-card group/item w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800 hover:bg-slate-600 hover:text-white transition-colors duration-300">
+      <div class="qfome-card group/item w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800 hover:bg-slate-600 hover:text-white transition-colors duration-300"  v-if="selectedCategory === 'all' || selectedCategory === 'design'">
         <div class="flex flex-col justify-between h-full">
           <div class="mb-4"></div>
           <a class="group/edit  duration-300 ease-in-out"
@@ -320,7 +334,7 @@
       
 
       <!-- Card 3 -->
-      <div class="mysong-card w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800">
+      <div class="mysong-card w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800"  v-if="selectedCategory === 'all' || selectedCategory === 'design'">
         <div class="flex flex-col justify-between h-full">
           <div class="mb-4"></div>
           <a class="group/edit  duration-300 ease-in-out"
@@ -422,8 +436,9 @@
   </main>
 
   <footer class=" max-w-screen-xl flex flex-wrap items-center mx-auto p-6">
-
-    <NavBarview />
+    <div class="w-full text-center">
+      <p class="text-gray-500 text-sm"> © 2024<a href="https://github.com/theablade"  target="_blank"> Fernando Muethea.</a> Todos os direitos reservados.</p>
+    </div>
 
   </footer>
 
@@ -438,10 +453,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faLinkedin, faGithub, faBehance, faDribbble } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faLinkedin, faGithub, faBehance, faDribbble)
+library.add(faLinkedin, faGithub, faBehance, faDribbble);
 
-
-
+const selectedCategory = ref('all');
 
 const socials = ref([
   { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/in/fernandomuethea/' },
@@ -449,6 +463,8 @@ const socials = ref([
   { name: 'Behance', icon: 'behance', url: 'https://www.behance.net/fernandomuethea' },
   { name: 'Dribbble', icon: 'dribbble', url: 'https://dribbble.com/turasdesigner' },
 ])
+
+
 
 
 const form = reactive({
@@ -521,4 +537,16 @@ html {
   font-family: 'DMSans', Arial, sans-serif;
 
 }
+
+footer {
+ 
+  padding: 20px;
+  text-align: center;
+  color: #6c757d;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+} 
 </style>

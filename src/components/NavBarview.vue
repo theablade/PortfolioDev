@@ -139,7 +139,13 @@ const toggleDarkMode = () => {
 }
 
 const toggleMenu = () => {
-    isMenuOpen.value = !isMenuOpen.value;
+  isMenuOpen.value = !isMenuOpen.value
+
+  if (isMenuOpen.value) {
+    document.body.classList.add('menu-open')
+  } else {
+    document.body.classList.remove('menu-open')
+  }
 }
 
 document.addEventListener('scroll', function () {
@@ -159,6 +165,7 @@ const setActiveMenu = (item) => {
 
     activeMenu.value = item;
     isMenuOpen.value = false;
+       document.body.classList.remove('menu-open')
 }
 
 const scrollToSection = (id) => {
