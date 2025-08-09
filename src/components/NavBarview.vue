@@ -180,6 +180,8 @@ const scrollToSection = (id) => {
   activeMenu.value = id.replace('#', '');
 };
 
+
+
 document.documentElement.classList.toggle(
   "dark",
   localStorage.theme === "dark" ||
@@ -190,6 +192,24 @@ localStorage.theme = "light";
 
 localStorage.theme = "dark";
 localStorage.removeItem("theme");
+
+const handleClickOutside = (event) => {
+  const navbar = document.querySelector('nav') // pega sua navbar fixa
+  if (isMenuOpen.value && navbar && !navbar.contains(event.target)) {
+    closeMenu()
+  }
+}
+const closeMenu = () => {
+  isMenuOpen.value = false;
+  document.body.classList.remove('menu-open');
+}
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside)
+})
+
+onBeforeUnmount(() => {
+  document.removeEventListener('click', handleClickOutside)
+})
 </script>
 
 <style scoped>
