@@ -535,7 +535,7 @@
 
   <footer class=" max-w-screen-xl flex flex-wrap items-center mx-auto p-6">
     <div class="w-full text-center">
-      <p class="text-gray-500 text-sm"> © 2024<a href="https://github.com/theablade"  target="_blank"> Fernando Muethea.</a> Todos os direitos reservados.</p>
+      <p class="text-gray-500 text-sm"> © 2024<a href="https://github.com/theablade"  target="_blank"> Fernando dos Santos Muethea.</a> Todos os direitos reservados.</p>
     </div>
 
   </footer>
