@@ -37,7 +37,13 @@
               Ler mais
             </button>
             <button class="border text-blue-700 font-bold w-32 h-12 lg:w-[146px] lg:h-[62px] hover:border rounded-xl">
-              Contacto
+            <a
+            href="/curriculo.pdf"
+            download
+            
+                >
+           Baixar Currículo
+        </a>
             </button>
           </div>
 </div>
@@ -275,10 +281,10 @@
     </button>
   </div>
 
-  <div class="skills mt-12">
+  <div class="skills mt-12" v-for="proj in projectos" :key="proj.id">
     <div class="languague grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       
-      
+  
       <!-- Card 1 -->
       <div class="portfolio-card w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800"  v-if="selectedCategory === 'all' || selectedCategory === 'web'">
         <div class="flex flex-col justify-between leading-normal">
@@ -312,7 +318,7 @@
           <div class="mb-4"></div>
           <a class="group/edit  duration-300 ease-in-out"
             href="https://www.behance.net/gallery/164374263/Design-de-aplicativo-de-entrega-de-comida" target="_blank">
-            <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >QFome App</span>
+            <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" > {{proj.descric}}</span>
             
             <img
                 src="../assets/imagem-qfome-298.webp"
@@ -361,6 +367,110 @@
 
     </div>
   </div>
+</section>
+
+<section class="apps" id="apps">
+  <h1 class="text-center text-xl sm:text-2xl lg:text-3xl text-blue-700 font-bold mb-8">
+    Apps Desenvolvidos
+  </h1>
+
+  <div class="skills mt-12">
+  
+    <div class="languague grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="app-card w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800">
+        <div class="flex flex-col justify-between h-full">
+          <div class="mb-4"></div>
+          <a class="group/edit  duration-300 ease-in-out"
+            href="#" target="_blank">
+            <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >Fin Ap</span>
+            <img
+                src="../assets/app-clima-298.webp"
+                srcset="
+                  ../assets/app-clima-298.webp 298w,
+                  ../assets/app-clima-600.webp 600w,
+                  ../assets/app-clima-1000.webp 1000w
+                "
+                sizes="(max-width: 600px) 100vw, 600px"
+                alt="App de gestão financeira"
+                loading="lazy"
+                width="298"
+                height="168"
+/>
+          </a>
+        </div>
+      </div>
+       <div class="app-card w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800">
+        <div class="flex flex-col justify-between h-full">
+          <div class="mb-4"></div>
+          <a class="group/edit  duration-300 ease-in-out"
+            href="#" target="_blank">
+            <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >App de Clima</span>
+            <img
+                src="../assets/app-clima-298.webp"
+                srcset="
+                  ../assets/app-clima-298.webp 298w,
+                  ../assets/app-clima-600.webp 600w,
+                  ../assets/app-clima-1000.webp 1000w
+                "
+                sizes="(max-width: 600px) 100vw, 600px"
+                alt="Descrição da imagem"
+                loading="lazy"
+                width="298"
+                height="168"
+/>
+          </a>
+        </div>
+      </div>
+       <div class="app-card w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800">
+        <div class="flex flex-col justify-between h-full">
+          <div class="mb-4"></div>
+          <a class="group/edit  duration-300 ease-in-out"
+            href="#" target="_blank">
+            <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >App de Clima</span>
+            <img
+                src="../assets/app-clima-298.webp"
+                srcset="
+                  ../assets/app-clima-298.webp 298w,
+                  ../assets/app-clima-600.webp 600w,
+                  ../assets/app-clima-1000.webp 1000w
+                "
+                sizes="(max-width: 600px) 100vw, 600px"
+                alt="Descrição da imagem"
+                loading="lazy"
+                width="298"
+                height="168"
+/>
+          </a>
+        </div>
+      </div>
+      <div class="app-card w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800">
+        <div class="flex flex-col justify-between h-full">
+          <div class="mb-4"></div>
+          <a class="group/edit  duration-300 ease-in-out"
+            href="#" target="_blank">
+            <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >App de Tarefas</span>
+            <img
+                src="../assets/app-tarefas-298.webp"
+                srcset="
+                  ../assets/app-tarefas-298.webp 298w,
+                  ../assets/app-tarefas-600.webp 600w,
+                  ../assets/app-tarefas-1000.webp 1000w
+                "
+                sizes="(max-width: 600px) 100vw, 600px"
+                alt="Descrição da imagem"
+                loading="lazy"
+                width="298"
+                height="168"
+/>
+          </a>
+        </div>
+      </div>  
+      </div>
+      
+      </div>
+      
+
 </section>
 
 
@@ -446,8 +556,9 @@
 
 
 <script setup>
-import { reactive, ref } from 'vue'
+import { reactive, ref,onMounted } from 'vue'
 import emailjs from 'emailjs-com'
+import { supabase } from '../lib/supabase'
 import NavBarview from '@/components/NavBarview.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -464,6 +575,23 @@ const socials = ref([
   { name: 'Dribbble', icon: 'dribbble', url: 'https://dribbble.com/turasdesigner' },
 ])
 
+
+
+const projectos = ref([])
+
+onMounted(async () => {
+  const { data, error } = await supabase
+    .from('projectos')
+    .select('*')
+    .limit(1) 
+
+  if (error) {
+    console.error('❌ Erro na conexão:', error.message)
+  } else {
+     projectos.value = data
+    console.log('✅ Conexão OK, dados recebidos:', data)
+  }
+})
 
 
 

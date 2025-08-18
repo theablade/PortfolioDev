@@ -65,7 +65,12 @@
                             Projectos
                         </a>
                     </li>
-
+                      <li>
+                        <a href="#apps" @click="setActiveMenu('projectos')" @click.prevent="scrollToSection('#projectos')"
+                            :class="{ 'border-b-2 border-blue-700 text-black p-1 dark:text-gray-100': activeMenu === 'projectos' }">
+                            Apps
+                        </a>
+                    </li>
                     <li>
                         <a href="#contacto" @click="setActiveMenu('contacto')" @click.prevent="scrollToSection('#contacto')"
                             :class="{ 'border-b-2 border-blue-700 text-black p-1 dark:text-gray-100': activeMenu === 'contacto' }">
@@ -172,7 +177,7 @@ const scrollToSection = (id) => {
   const section = document.querySelector(id);
   if (section) {
     window.scrollTo({
-      top: section.offsetTop - 100, // ajuste conforme a altura da navbar
+      top: section.offsetTop - 100, 
       behavior: 'smooth',
     });
   }
@@ -194,7 +199,7 @@ localStorage.theme = "dark";
 localStorage.removeItem("theme");
 
 const handleClickOutside = (event) => {
-  const navbar = document.querySelector('nav') // pega sua navbar fixa
+  const navbar = document.querySelector('nav') 
   if (isMenuOpen.value && navbar && !navbar.contains(event.target)) {
     closeMenu()
   }
