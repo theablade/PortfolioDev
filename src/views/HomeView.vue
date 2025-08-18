@@ -384,8 +384,7 @@
           <a class="group/edit  duration-300 ease-in-out"
             href="/downloads/finapp.apk" download target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >Fin Ap</span>
-          
-/> <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+          <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
         Aplicativo de gestão financeira desenvolvido em Flutter.
       </p>
       <span class="inline-block px-4 py-2 bg-blue-600 text-white text-sm rounded-lg shadow group-hover:bg-blue-700 transition">
