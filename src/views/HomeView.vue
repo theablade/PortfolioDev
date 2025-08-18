@@ -384,13 +384,7 @@
           <a class="group/edit  duration-300 ease-in-out"
             href="downloads/finapp.apk" download target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >Fin Ap</span>
-            <img
-                src=""
-                sizes="(max-width: 600px) 100vw, 600px"
-                alt="FinApp - Aplicativo de gestão financeira"
-                loading="lazy"
-                width="298"
-                height="168"
+          
 /> <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
         Aplicativo de gestão financeira desenvolvido em Flutter.
       </p>
@@ -406,14 +400,7 @@
           <a class="group/edit  duration-300 ease-in-out"
             href="#" target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >App de Clima</span>
-            <img
-                src=""
-                sizes="(max-width: 600px) 100vw, 600px"
-                alt="Descrição da imagem"
-                loading="lazy"
-                width="298"
-                height="168"
-/>
+            
           </a>
         </div>
       </div>
@@ -423,14 +410,7 @@
           <a class="group/edit  duration-300 ease-in-out"
             href="#" target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >App de Clima</span>
-            <img
-              src=""
-                sizes="(max-width: 600px) 100vw, 600px"
-                alt="Descrição da imagem"
-                loading="lazy"
-                width="298"
-                height="168"
-/>
+           
           </a>
         </div>
       </div>
@@ -440,17 +420,7 @@
           <a class="group/edit  duration-300 ease-in-out"
             href="#" target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >App de Tarefas</span>
-            <img
-                src=""
-                srcset="
-                  
-                "
-                sizes="(max-width: 600px) 100vw, 600px"
-                alt="Descrição da imagem"
-                loading="lazy"
-                width="298"
-                height="168"
-/>
+            
           </a>
         </div>
       </div>  
