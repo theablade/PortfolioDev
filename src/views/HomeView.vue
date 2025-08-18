@@ -382,7 +382,7 @@
         <div class="flex flex-col justify-between h-full">
           <div class="mb-4"></div>
           <a class="group/edit  duration-300 ease-in-out"
-            href="downloads/finapp.apk" download target="_blank">
+            href="/public/downloads/finapp.apk" download target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >Fin Ap</span>
           
 /> <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
