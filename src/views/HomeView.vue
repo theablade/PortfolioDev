@@ -376,13 +376,13 @@
 
   <div class="skills mt-12">
   
-    <div class="languague grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="languague grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       
       <div class="app-card w-full h-auto p-4 bg-white rounded-lg border dark:bg-gray-800">
         <div class="flex flex-col justify-between h-full">
           <div class="mb-4"></div>
           <a class="group/edit  duration-300 ease-in-out"
-            href="#" target="_blank">
+            href="downloads/finapp.apk" download target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >Fin Ap</span>
             <img
                 src="../assets/app-clima-298.webp"
@@ -392,11 +392,16 @@
                   ../assets/app-clima-1000.webp 1000w
                 "
                 sizes="(max-width: 600px) 100vw, 600px"
-                alt="App de gesto financeira"
+                alt="FinApp - Aplicativo de gestão financeira"
                 loading="lazy"
                 width="298"
                 height="168"
-/>
+/> <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+        Aplicativo de gestão financeira desenvolvido em Flutter.
+      </p>
+      <span class="inline-block px-4 py-2 bg-blue-600 text-white text-sm rounded-lg shadow group-hover:bg-blue-700 transition">
+        📥 Baixar APK
+      </span>
           </a>
         </div>
       </div>
@@ -556,9 +561,8 @@
 
 
 <script setup>
-import { reactive, ref,onMounted } from 'vue'
+import { reactive, ref } from 'vue'
 import emailjs from 'emailjs-com'
-import { supabase } from '../lib/supabase'
 import NavBarview from '@/components/NavBarview.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -577,21 +581,7 @@ const socials = ref([
 
 
 
-const projectos = ref([])
 
-onMounted(async () => {
-  const { data, error } = await supabase
-    .from('projectos')
-    .select('*')
-    .limit(1) 
-
-  if (error) {
-    console.error('❌ Erro na conexão:', error.message)
-  } else {
-     projectos.value = data
-    console.log('✅ Conexão OK, dados recebidos:', data)
-  }
-})
 
 
 
