@@ -66,8 +66,8 @@
                         </a>
                     </li>
                       <li>
-                        <a href="#apps" @click="setActiveMenu('projectos')" @click.prevent="scrollToSection('#projectos')"
-                            :class="{ 'border-b-2 border-blue-700 text-black p-1 dark:text-gray-100': activeMenu === 'projectos' }">
+                        <a href="#apps" @click="setActiveMenu('apps')" @click.prevent="scrollToSection('#apps')"
+                            :class="{ 'border-b-2 border-blue-700 text-black p-1 dark:text-gray-100': activeMenu === 'apps' }">
                             Apps
                         </a>
                     </li>
@@ -109,10 +109,10 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 import darkIcon from '@/assets/dark.svg';
 import ligthIcon from '@/assets/ligth.svg';
 
-const sections = ['home', 'sobre', 'habilidades', 'servicos','projectos', 'contacto'];
+const sections = ['home', 'sobre', 'habilidades', 'servicos','projectos', 'apps','contacto'];
 
 const handleScroll = () => {
-  const scrollPosition = window.scrollY + 120; // ajuste com base na altura da navbar
+  const scrollPosition = window.scrollY + 120; 
 
   for (let i = sections.length - 1; i >= 0; i--) {
     const section = document.getElementById(sections[i]);

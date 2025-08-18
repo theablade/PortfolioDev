@@ -281,7 +281,7 @@
     </button>
   </div>
 
-  <div class="skills mt-12" v-for="proj in projectos" :key="proj.id">
+  <div class="skills mt-12" >
     <div class="languague grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       
   
@@ -318,7 +318,7 @@
           <div class="mb-4"></div>
           <a class="group/edit  duration-300 ease-in-out"
             href="https://www.behance.net/gallery/164374263/Design-de-aplicativo-de-entrega-de-comida" target="_blank">
-            <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" > {{proj.descric}}</span>
+            <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" ></span>
             
             <img
                 src="../assets/imagem-qfome-298.webp"
@@ -392,7 +392,7 @@
                   ../assets/app-clima-1000.webp 1000w
                 "
                 sizes="(max-width: 600px) 100vw, 600px"
-                alt="App de gestão financeira"
+                alt="App de gesto financeira"
                 loading="lazy"
                 width="298"
                 height="168"
