@@ -101,7 +101,7 @@
                     <div class="space-y-6">
                         <p class="text-gray-500 mt-4 md:text-lg leading-relaxed">
                             Olá! Meu nome é 
-                            <span class="highlight font-bold text-blue-700">Fernando dos Santos Muethea</span>, 
+                            <span class="highlight font-bold text-blue-700">Fernando Muethea</span>, 
                             e sou um desenvolvedor front-end apaixonado por criar experiências digitais incríveis.
                         </p>
                         
