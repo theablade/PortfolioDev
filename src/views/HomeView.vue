@@ -386,9 +386,6 @@
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >Fin Ap</span>
             <img
                 src=""
-                srcset="
-                  
-                "
                 sizes="(max-width: 600px) 100vw, 600px"
                 alt="FinApp - Aplicativo de gestão financeira"
                 loading="lazy"
@@ -411,9 +408,6 @@
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >App de Clima</span>
             <img
                 src=""
-                srcset="
-                   
-                "
                 sizes="(max-width: 600px) 100vw, 600px"
                 alt="Descrição da imagem"
                 loading="lazy"
@@ -430,10 +424,7 @@
             href="#" target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >App de Clima</span>
             <img
-                src=""
-                srcset="
-                   
-                "
+              src=""
                 sizes="(max-width: 600px) 100vw, 600px"
                 alt="Descrição da imagem"
                 loading="lazy"
