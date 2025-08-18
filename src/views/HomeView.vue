@@ -385,11 +385,9 @@
             href="downloads/finapp.apk" download target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >Fin Ap</span>
             <img
-                src="../assets/app-clima-298.webp"
+                src=""
                 srcset="
-                  ../assets/app-clima-298.webp 298w,
-                  ../assets/app-clima-600.webp 600w,
-                  ../assets/app-clima-1000.webp 1000w
+                  
                 "
                 sizes="(max-width: 600px) 100vw, 600px"
                 alt="FinApp - Aplicativo de gestão financeira"
@@ -412,11 +410,9 @@
             href="#" target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >App de Clima</span>
             <img
-                src="../assets/app-clima-298.webp"
+                src=""
                 srcset="
-                  ../assets/app-clima-298.webp 298w,
-                  ../assets/app-clima-600.webp 600w,
-                  ../assets/app-clima-1000.webp 1000w
+                   
                 "
                 sizes="(max-width: 600px) 100vw, 600px"
                 alt="Descrição da imagem"
@@ -434,11 +430,9 @@
             href="#" target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >App de Clima</span>
             <img
-                src="../assets/app-clima-298.webp"
+                src=""
                 srcset="
-                  ../assets/app-clima-298.webp 298w,
-                  ../assets/app-clima-600.webp 600w,
-                  ../assets/app-clima-1000.webp 1000w
+                   
                 "
                 sizes="(max-width: 600px) 100vw, 600px"
                 alt="Descrição da imagem"
