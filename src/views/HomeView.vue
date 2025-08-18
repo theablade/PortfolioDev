@@ -441,11 +441,9 @@
             href="#" target="_blank">
             <span class="group-hover/edit:text-white transition-colors duration-300 ease-in-out" >App de Tarefas</span>
             <img
-                src="../assets/app-tarefas-298.webp"
+                src=""
                 srcset="
-                  ../assets/app-tarefas-298.webp 298w,
-                  ../assets/app-tarefas-600.webp 600w,
-                  ../assets/app-tarefas-1000.webp 1000w
+                  
                 "
                 sizes="(max-width: 600px) 100vw, 600px"
                 alt="Descrição da imagem"
